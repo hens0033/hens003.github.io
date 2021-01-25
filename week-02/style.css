@@ -1,0 +1,216 @@
+/* 
+~~~~~~~~ CSS Reset ~~~~~~~~
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+~~~~~~~~ Main Content ~~~~~~~~
+*/
+
+/* 
+    Body Font Size/Family
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#main.main {
+    background-color: white;
+}
+
+main section.home {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+main .about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+main .contact {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* 
+    Nav Bar
+*/
+
+#nav.nav {
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px 0;
+    border: none;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+}
+
+#nav .nav-link {
+    color: skyblue;
+}
+
+#nav .nav-link:hover, .nav-link:focus{
+    color: navy;
+}
+
+/* 
+    Section Designs
+*/
+
+section {
+    margin: 1em 0;
+    background-color: skyblue;
+}
+
+#home.home {
+    text-align: left;
+    background-color: skyblue;
+    padding: 100px 1rem 100px 2rem;
+}
+
+#home.home h1 {
+    text-align: left;
+}
+
+#about.about {
+    background-color: skyblue;
+    color: black;
+    padding: 100px 1rem 100px 2rem;
+    text-align: justify;
+}
+
+#about.about h2 {
+    text-align: left;
+}
+
+#about.about img {
+    float: left;
+    margin: 2em 0;
+}
+
+#contact.contact {
+    padding: 100px 1rem 100px 2rem;
+}
+
+#contact.contact h2 {
+    text-align: left;
+}
+
+/* 
+    Contact Form Design
+*/
+
+form.contact-form {
+    width: inherit;
+    margin: 1em 1em 0 0;
+    background-color: royalblue;
+}
+
+.contact-form-label {
+    font-size: 1rem;
+}
+
+.contact-form .contact-form-input {
+    max-width: 100%;
+    padding: 0.5rem 0;
+    margin: 10px 0;
+}
+
+/* 
+    Footer
+*/
+
+footer {
+    border-top: solid 0.35em royalblue;
+    text-align: right;
+    padding-top: 15px;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+footer p {
+    padding-right: 2em;
+}
+
+
+/* 
+~~~~~~~~ Media Queries ~~~~~~~~
+*/
+
+@media screen and (min-width: 650px){
+
+    #nav.nav {
+        justify-content: left;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    #about.about img, #about.about p {
+        margin: 0 auto 1em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 900px){
+    
+    #about.about img {
+        width: 200px;
+    }
+
+    #about.about p {
+        margin-top: 1em;
+    }
+}
